@@ -1,0 +1,13 @@
+mutation Logout($userId: ID!) {
+  logout(userId: $userId) {
+    code
+    message
+    success
+    user {
+      id
+      username
+      email
+      tokenVersion
+    }
+  }
+}
